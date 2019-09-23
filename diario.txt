@@ -1,3 +1,22 @@
 20190916
 
 creado usuario en github(antcha19)
+
+
+
+20190923 
+
+Virtual Box
+
+crear maquina virtual DAM: RAM 2048,disco 20GB,Procesador 2 nucleos.
+
+nombre:administrador
+nombre del equipo: serpisdam
+usuario:administrador
+contraseña:sistemas
+
+# :root
+sudo -i: cambiamos a root(login)
+apt get update :actualiza la lista de paquetes disponible
+apt get full-upgrade:actualiza S.O
+apt get upgrade: actualiza S.O.

@@ -2,7 +2,7 @@
 
 creado usuario en github(antcha19)
 
-
+git commit -m "diario.txt"
 
 20190923 
 

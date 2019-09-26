@@ -1,10 +1,10 @@
-20190916
+20190916 AY
 
 creado usuario en github(antcha19)
 
 git commit -m "diario.txt"
 
-20190923 
+20190923 AY
 
 Virtual Box
 
@@ -20,3 +20,14 @@ sudo -i: cambiamos a root(login)
 apt get update :actualiza la lista de paquetes disponible
 apt get full-upgrade:actualiza S.O
 apt get upgrade: actualiza S.O.
+
+20190926 AY
+
+gcc -o holamundo holamundo.c sirve para complicar en C
+./hola  mostar mensaje complicado 
+
+javac -version 
+java -version   ver version
+update-alternatives --list javac mostrar listas de versiones
+
+update-alternatives --config java cambiar la version a utilizar por defecto

@@ -31,3 +31,15 @@ java -version   ver version
 update-alternatives --list javac mostrar listas de versiones
 
 update-alternatives --config java cambiar la version a utilizar por defecto
+
+10102019 AY
+
+actualizar maquina virtual
+instalar java jdk
+
+sudo add-apt-repository ppa:webupd8team/java  repositorio PPA //no funciona
+
+apt install openjdk-8-jdk
+instalar git "control de version"
+apt install git
+

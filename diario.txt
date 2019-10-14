@@ -44,3 +44,9 @@ instalar git "control de version"
 apt install git
 
 
+
+14102019 AY
+
+vector en java ejemplo
+int[] v={17,12,15,9,14}; 
+

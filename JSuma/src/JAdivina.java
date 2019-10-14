@@ -19,7 +19,7 @@ public class JAdivina {
 		x  = sc.nextInt();
 	
 		while (x !=0) {
-			System.out.println("introduce un numeor (0 para terminar):");	
+			System.out.println("introduce un numero (0 para terminar):");	
 			x = sc.nextInt();
 			
 		}

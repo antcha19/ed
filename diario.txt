@@ -50,3 +50,8 @@ apt install git
 vector en java ejemplo
 int[] v={17,12,15,9,14}; 
 
+
+21102019 AY
+
+programa adivinar numero aleatorio
+

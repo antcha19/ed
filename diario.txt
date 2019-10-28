@@ -55,3 +55,8 @@ int[] v={17,12,15,9,14};
 
 programa adivinar numero aleatorio
 
+28102019
+progrma la buscar un dato en concreto
+	programa "busqueda"
+indexof 
+

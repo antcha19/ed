@@ -36,5 +36,7 @@ public class verctor2 {
 			System.out.println("fin");
 
 	}
+	
+	 	
 
 }

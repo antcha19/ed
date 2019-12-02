@@ -8,8 +8,9 @@ public class Vector {
 		
 		//vector
 		int [] v= {17,12,15,9,14};
+		int index=0;
 		
-		for (  int index= 0 ; index <5 ; index++);
+		for (   index= 0 ; index <5 ; index++);
 		System.out.printf("elemento " + index +  " valor=" +  v[ index ]);
 		
 		//System.out.println("v[0] = " + v[ index ]);// utliza la variable index

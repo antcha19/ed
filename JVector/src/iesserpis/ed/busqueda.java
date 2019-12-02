@@ -9,8 +9,8 @@ public class busqueda {
 	public static void main(String[] args) {
 	
 		//declara variable/vector
-		int [] v= new int [] {17,12,15,9,14};
-		int x =15;
+		int [] v= new int [] {17,12,15,9,14}; //posicion (0,1,2,3,4)
+		int x =15;							 //posicion 2
 		int index =indexOf(v, x);
 		
 		System.out.println("index:" + index);

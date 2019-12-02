@@ -37,7 +37,7 @@ public class jadivinar {
 		} while (numerointroducido != numeroaleatorio);
 		
 		System.out.println(" has acertado");
-		//contadorintentos;
+		//contadorintentos comnetarios;
 	}
 	
 

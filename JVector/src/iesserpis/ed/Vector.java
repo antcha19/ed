@@ -10,11 +10,11 @@ public class Vector {
 		int [] v= {17,12,15,9,14};
 		int index=0;
 		
-		for (   index= 0 ; index <5 ; index++);
-		System.out.printf("elemento " + index +  " valor=" +  v[ index ]);
+		for (    index= 0 ; index <4 ; index++);
+		System.out.println("elemento " + index +  " valor=" +  v[ index ]);
 		
-		//System.out.println("v[0] = " + v[ index ]);// utliza la variable index
-		//System.out.println("v[1] = " + v[1]);
+		System.out.println("v[0] = " + v[ index ]);// utliza la variable index
+		System.out.println("v[1] = " + v[1]);
 	}
 
 }

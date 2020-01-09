@@ -8,6 +8,11 @@ public class Vector1 {
 	}
 
 	public static int max(int[] v) {
+		
+		if (v.length ==0)
+			
+			throw new IllegalArgumentException();
+		
 		int max = v[0];
 		for (int i = 1; i < v.length ; i++) {
 

@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaBotones", "PruebaBotones\PruebaBotones.csproj", "{D5809C59-3F21-4255-A774-3778A17F4958}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5809C59-3F21-4255-A774-3778A17F4958}.Debug|x86.ActiveCfg = Debug|x86
+		{D5809C59-3F21-4255-A774-3778A17F4958}.Debug|x86.Build.0 = Debug|x86
+		{D5809C59-3F21-4255-A774-3778A17F4958}.Release|x86.ActiveCfg = Release|x86
+		{D5809C59-3F21-4255-A774-3778A17F4958}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

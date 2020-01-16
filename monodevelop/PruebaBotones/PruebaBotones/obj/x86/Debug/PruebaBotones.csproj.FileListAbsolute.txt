@@ -1,0 +1,6 @@
+/home/antcha/ed/monodevelop/PruebaBotones/PruebaBotones/bin/Debug/PruebaBotones.exe
+/home/antcha/ed/monodevelop/PruebaBotones/PruebaBotones/bin/Debug/PruebaBotones.pdb
+/home/antcha/ed/monodevelop/PruebaBotones/PruebaBotones/obj/x86/Debug/PruebaBotones.csprojAssemblyReference.cache
+/home/antcha/ed/monodevelop/PruebaBotones/PruebaBotones/obj/x86/Debug/PruebaBotones.csproj.CoreCompileInputs.cache
+/home/antcha/ed/monodevelop/PruebaBotones/PruebaBotones/obj/x86/Debug/PruebaBotones.exe
+/home/antcha/ed/monodevelop/PruebaBotones/PruebaBotones/obj/x86/Debug/PruebaBotones.pdb

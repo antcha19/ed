@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{D5809C59-3F21-4255-A774-3778A17F4958}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="PruebaBotones/MainWindow.cs">
     <Files>
-      <File FileName="PruebaBotones/Program.cs" Line="1" Column="1" />
-      <File FileName="PruebaBotones/MainWindow.cs" Line="21" Column="13" />
+      <File FileName="PruebaBotones/Program.cs" Line="17" Column="1" />
+      <File FileName="PruebaBotones/MainWindow.cs" Line="40" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -9,7 +9,7 @@ public partial class MainWindow
 
 	private global::Gtk.HBox hbox1;
 
-	private global::Gtk.Entry entry1;
+	private global::Gtk.Entry text;
 
 	private global::Gtk.Button BSaludar;
 
@@ -17,9 +17,9 @@ public partial class MainWindow
 
 	private global::Gtk.Entry entry2;
 
-	private global::Gtk.Button button5;
+	private global::Gtk.Button BAleatorio;
 
-	private global::Gtk.Button button4;
+	private global::Gtk.Button BSalir;
 
 	protected virtual void Build()
 	{
@@ -48,18 +48,18 @@ public partial class MainWindow
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.entry1 = new global::Gtk.Entry();
-		this.entry1.CanFocus = true;
-		this.entry1.Name = "entry1";
-		this.entry1.IsEditable = true;
-		this.entry1.InvisibleChar = '•';
-		this.hbox1.Add(this.entry1);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.entry1]));
+		this.text = new global::Gtk.Entry();
+		this.text.CanFocus = true;
+		this.text.Name = "text";
+		this.text.IsEditable = true;
+		this.text.InvisibleChar = '•';
+		this.hbox1.Add(this.text);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.text]));
 		w2.Position = 0;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.BSaludar = new global::Gtk.Button();
-		this.BSaludar.WidthRequest = 0;
-		this.BSaludar.HeightRequest = 0;
+		this.BSaludar.WidthRequest = 135;
+		this.BSaludar.HeightRequest = 50;
 		this.BSaludar.CanFocus = true;
 		this.BSaludar.Name = "BSaludar";
 		this.BSaludar.UseUnderline = true;
@@ -83,30 +83,30 @@ public partial class MainWindow
 		this.entry2 = new global::Gtk.Entry();
 		this.entry2.CanFocus = true;
 		this.entry2.Name = "entry2";
-		this.entry2.IsEditable = true;
+		this.entry2.IsEditable = false;
 		this.entry2.InvisibleChar = '•';
 		this.hbox2.Add(this.entry2);
 		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.entry2]));
 		w5.Position = 0;
 		// Container child hbox2.Gtk.Box+BoxChild
-		this.button5 = new global::Gtk.Button();
-		this.button5.CanFocus = true;
-		this.button5.Name = "button5";
-		this.button5.UseUnderline = true;
-		this.button5.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.hbox2.Add(this.button5);
-		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.button5]));
+		this.BAleatorio = new global::Gtk.Button();
+		this.BAleatorio.CanFocus = true;
+		this.BAleatorio.Name = "BAleatorio";
+		this.BAleatorio.UseUnderline = true;
+		this.BAleatorio.Label = global::Mono.Unix.Catalog.GetString("Aleatorio");
+		this.hbox2.Add(this.BAleatorio);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.BAleatorio]));
 		w6.Position = 1;
 		w6.Expand = false;
 		w6.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
-		this.button4 = new global::Gtk.Button();
-		this.button4.CanFocus = true;
-		this.button4.Name = "button4";
-		this.button4.UseUnderline = true;
-		this.button4.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.hbox2.Add(this.button4);
-		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.button4]));
+		this.BSalir = new global::Gtk.Button();
+		this.BSalir.CanFocus = true;
+		this.BSalir.Name = "BSalir";
+		this.BSalir.UseUnderline = true;
+		this.BSalir.Label = global::Mono.Unix.Catalog.GetString("Salir");
+		this.hbox2.Add(this.BSalir);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.BSalir]));
 		w7.Position = 2;
 		w7.Expand = false;
 		w7.Fill = false;
@@ -120,10 +120,12 @@ public partial class MainWindow
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 400;
+		this.DefaultWidth = 426;
 		this.DefaultHeight = 300;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.BSaludar.Clicked += new global::System.EventHandler(this.OnBSaludarClicked);
+		this.BAleatorio.Clicked += new global::System.EventHandler(this.OnBAleatorioClicked);
+		this.BSalir.Clicked += new global::System.EventHandler(this.OnBSalirClicked);
 	}
 }

@@ -2,17 +2,21 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="PruebaBotones/MainWindow.cs">
     <Files>
       <File FileName="PruebaBotones/Program.cs" Line="17" Column="1" />
-      <File FileName="PruebaBotones/MainWindow.cs" Line="40" Column="10" />
+      <File FileName="PruebaBotones/MainWindow.cs" Line="43" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PruebaBotones" expanded="True">
             <Node name="PruebaBotones" expanded="True">
+              <Node name="Properties" expanded="True" />
               <Node name="MainWindow.cs" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

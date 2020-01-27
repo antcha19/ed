@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{D5809C59-3F21-4255-A774-3778A17F4958}</ProjectGuid>
+    <ProjectGuid>{A5B9F772-5A29-4958-B44D-C54D73DD0D83}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PruebaBotones</RootNamespace>
-    <AssemblyName>PruebaBotones</AssemblyName>
+    <RootNamespace>tabla</RootNamespace>
+    <AssemblyName>tabla</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -64,8 +64,7 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Window.cs" />
-    <Compile Include="gtk-gui\PruebaBotones.Window.cs" />
+    <Compile Include="Panel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

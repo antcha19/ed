@@ -8,20 +8,21 @@ namespace tabla
 
         public Panel (VBox vBox)
         {
+
             //variables
-            Table table = new Table(3, 3, true);
+            Table table = new Table(10, 9, true);
             int index = 0;
 
-            for (int row = 0; row < 3; row++)
-                for (int column = 0; column < 3; column++)
+            for (int row = 0; row < 10; row++)
+                for (int column = 0; column < 9; column++)
                 {
 
                     index++;
                     Button button = new Button();
                     table.Attach(button, (uint)column, (uint)column + 1, (uint)row, (uint)row + 1);
 
-                    /*añade una etiqueta un nombre a los botones
-                    button.Label = "Button";*/
+                    //añade una etiqueta un nombre a los botones
+                    //button.Label = "Button";
 
                     button.Label = index.ToString();
                     button.Clicked += delegate
@@ -31,11 +32,11 @@ namespace tabla
 
                     };
                 }
-            /*añade a la tabla los botones*/
+            //añade a la tabla los botones
             vBox.Add(table);
-            /*crea una tabla con los botones*/
+            //crea una tabla con los botones
             table.ShowAll();
         
-    }
+        }
     }
 }

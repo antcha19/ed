@@ -9,7 +9,7 @@ public partial class MainWindow
 
 	private global::Gtk.Label Text;
 
-	private global::Gtk.Button button1;
+	private global::Gtk.Button Bjugar;
 
 	protected virtual void Build()
 	{
@@ -36,13 +36,15 @@ public partial class MainWindow
 		w1.Position = 0;
 		w1.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.button1 = new global::Gtk.Button();
-		this.button1.CanFocus = true;
-		this.button1.Name = "button1";
-		this.button1.UseUnderline = true;
-		this.button1.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.hbox1.Add(this.button1);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.button1]));
+		this.Bjugar = new global::Gtk.Button();
+		this.Bjugar.WidthRequest = 90;
+		this.Bjugar.HeightRequest = 49;
+		this.Bjugar.CanFocus = true;
+		this.Bjugar.Name = "Bjugar";
+		this.Bjugar.UseUnderline = true;
+		this.Bjugar.Label = global::Mono.Unix.Catalog.GetString("Jugar");
+		this.hbox1.Add(this.Bjugar);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.Bjugar]));
 		w2.Position = 1;
 		w2.Expand = false;
 		w2.Fill = false;
@@ -60,5 +62,6 @@ public partial class MainWindow
 		this.DefaultHeight = 300;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.Bjugar.Clicked += new global::System.EventHandler(this.OnBjugarClicked);
 	}
 }

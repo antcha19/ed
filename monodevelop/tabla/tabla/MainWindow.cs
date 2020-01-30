@@ -4,11 +4,15 @@ using tabla;
 
 public partial class MainWindow : Gtk.Window
 {
+    //numero aleatorio
+    private Random random = new Random();
+
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
 
         Panel panel = new Panel(vBox);
+        Bombo bombo = new Bombo();
 
         /*
         //variables
@@ -38,11 +42,20 @@ public partial class MainWindow : Gtk.Window
         vBox.Add(table);
         //crea una tabla con los botones
         table.ShowAll();*/
-        }
+      
+    }
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
     {
         Application.Quit();
         a.RetVal = true;
+    }
+
+    protected void OnBjugarClicked(object sender, EventArgs e)
+    {
+        int indexAleatorio = random.Next(1, 90);
+        MessageDialog aleatorio = new MessageDialog(null, DialogFlags.Modal, MessageType.Question, ButtonsType.Close, "Numero aleatorio: " + indexAleatorio);
+        aleatorio.Run();
+        aleatorio.Destroy();
     }
 }

@@ -32,12 +32,15 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Button" id="button1">
+              <widget class="Gtk.Button" id="Bjugar">
                 <property name="MemberName" />
+                <property name="WidthRequest">90</property>
+                <property name="HeightRequest">49</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
-                <property name="Label" translatable="yes">GtkButton</property>
+                <property name="Label" translatable="yes">Jugar</property>
                 <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnBjugarClicked" />
               </widget>
               <packing>
                 <property name="Position">1</property>

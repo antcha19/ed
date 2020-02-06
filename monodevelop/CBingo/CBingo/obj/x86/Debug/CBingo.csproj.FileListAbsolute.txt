@@ -1,0 +1,6 @@
+/home/antcha/ed/monodevelop/CBingo/CBingo/bin/Debug/CBingo.exe
+/home/antcha/ed/monodevelop/CBingo/CBingo/bin/Debug/CBingo.pdb
+/home/antcha/ed/monodevelop/CBingo/CBingo/obj/x86/Debug/CBingo.csprojAssemblyReference.cache
+/home/antcha/ed/monodevelop/CBingo/CBingo/obj/x86/Debug/CBingo.csproj.CoreCompileInputs.cache
+/home/antcha/ed/monodevelop/CBingo/CBingo/obj/x86/Debug/CBingo.exe
+/home/antcha/ed/monodevelop/CBingo/CBingo/obj/x86/Debug/CBingo.pdb

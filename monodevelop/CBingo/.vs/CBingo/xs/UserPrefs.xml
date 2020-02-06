@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{79091C26-79E7-4219-9C4C-1A5C19694E49}|Default">
+  <MonoDevelop.Ide.ItemProperties.CBingo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/MainWindow.cs">
+    <Files>
+      <File FileName="CBingo/MainWindow.cs" Line="34" Column="1" />
+      <File FileName="CBingo/Panel.cs" Line="11" Column="4" />
+      <File FileName="CBingo/Bombo.cs" Line="18" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CBingo" expanded="True">
+            <Node name="CBingo" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

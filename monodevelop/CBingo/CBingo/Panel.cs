@@ -26,7 +26,10 @@ namespace CBingo
             vbox1.Add(table);
             table.ShowAll();
         }
-
+        public void Marcar (int numero)
+        {
+            buttons[numero - 1].ModifyBg(StateType.Normal, new Gdk.Color(0,255,0));
+        }
 
     }
 }

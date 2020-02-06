@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Gtk;
 
+
 namespace CBingo
 {
     public class Bombo
@@ -17,8 +18,9 @@ namespace CBingo
 
         public int sacarBola()
         {
-            int indexAleatorio = random.Next(1,90);
+            int indexAleatorio = random.Next(bolas.Count);
             int bola = bolas[indexAleatorio];
+            bolas.RemoveAt(indexAleatorio);
             return bola;
         }
     }

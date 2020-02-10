@@ -6,6 +6,7 @@ public partial class MainWindow : Gtk.Window
 {
     Bombo bombo = new Bombo();
     Panel panel;
+
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
@@ -32,7 +33,7 @@ public partial class MainWindow : Gtk.Window
    protected void OnBJugarClicked(object sender, EventArgs e)
     {
 
-        int numero = bombo.sacarBola();
+        int numero = bombo.SacarBola();
         panel.Marcar(numero);
     }
 }

@@ -1,11 +1,6 @@
 ﻿<Properties StartupConfiguration="{79091C26-79E7-4219-9C4C-1A5C19694E49}|Default">
   <MonoDevelop.Ide.ItemProperties.CBingo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/Panel.cs">
-    <Files>
-      <File FileName="CBingo/MainWindow.cs" Line="32" Column="27" />
-      <File FileName="CBingo/Panel.cs" Line="14" Column="10" />
-      <File FileName="CBingo/Bombo.cs" Line="4" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -15,9 +10,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

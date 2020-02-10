@@ -1,0 +1,6 @@
+/home/antcha/ed/monodevelop/Calculadora/bin/Debug/Calculadora.exe
+/home/antcha/ed/monodevelop/Calculadora/bin/Debug/Calculadora.pdb
+/home/antcha/ed/monodevelop/Calculadora/obj/x86/Debug/Calculadora.csprojAssemblyReference.cache
+/home/antcha/ed/monodevelop/Calculadora/obj/x86/Debug/Calculadora.csproj.CoreCompileInputs.cache
+/home/antcha/ed/monodevelop/Calculadora/obj/x86/Debug/Calculadora.exe
+/home/antcha/ed/monodevelop/Calculadora/obj/x86/Debug/Calculadora.pdb

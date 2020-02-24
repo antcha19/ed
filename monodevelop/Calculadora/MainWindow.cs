@@ -5,8 +5,15 @@ public partial class MainWindow : Gtk.Window
 {
 
     int contador;
-    float numero1, numero2; 
-    float resultado=0;
+    float numero1;
+    float numero2;
+    String opcion;
+    float contadorigual;
+    float result;
+
+    operaciones resultado = new operaciones();
+
+
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
@@ -20,9 +27,8 @@ public partial class MainWindow : Gtk.Window
         bigual.ModifyBg(StateType.Normal, new Gdk.Color(180, 118, 60));
         // color de la pantalla
         ModifyBg(StateType.Normal, new Gdk.Color(8, 8, 8));
-        label1.ModifyBg(StateType.Normal, new Gdk.Color(231, 231, 231));
+        //label1.ModifyBg(StateType.Normal, new Gdk.Color(231, 231, 231));
 
-        operaciones resultado = new operaciones();
 
     }
 
@@ -46,7 +52,7 @@ public partial class MainWindow : Gtk.Window
 
         Pantalla.DeleteText( Pantalla.Text.Length-1, Pantalla.Text.Length);
         String display = Pantalla.Text.ToString();
-        if (display.Contains("."))
+        if (display.Contains(","))
         {
             contador = 0;
         }
@@ -56,47 +62,99 @@ public partial class MainWindow : Gtk.Window
     //boton dividir
     protected void OnBdividirClicked(object sender, EventArgs e)
     {
+        numero1 = Convert.ToSingle(Pantalla.Text);
         String display = Pantalla.Text.ToString();
+        //Pantalla.InsertText(display + " / ");
         Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + " / ");
-
+        opcion = "/";
     }
    
     //boton multiplicacion
     protected void OnBmultiClicked(object sender, EventArgs e)
     {
+        numero1 = Convert.ToSingle(Pantalla.Text);
         String display = Pantalla.Text.ToString();
+       
+        //Pantalla.InsertText(display + " * ");
         Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + " * ");
+        opcion = "*";
     }
 
     //boton resta
     protected void OnBrestaClicked(object sender, EventArgs e)
     {
+        numero1 = Convert.ToSingle(Pantalla.Text);
         String display = Pantalla.Text.ToString();
+       
+        //Pantalla.InsertText(display + " - ");
         Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + " - ");
-    }
-
-    //boton igual
-    protected void OnBigualClicked(object sender, EventArgs e)
-    {
-        String display = Pantalla.Text.ToString();
-        Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + "  ");
-
+        opcion = "-";
     }
 
     //boton suma
     protected void OnBsumaClicked(object sender, EventArgs e)
     {
+        numero1 = Convert.ToSingle(Pantalla.Text);
+        //String display = Pantalla.Text.ToString();
+       
+        //Pantalla.InsertText(display + " + ");
+        //limpia la pantalla
+        Pantalla.DeleteText(0, Pantalla.Text.Length);
+        opcion = "+";
+
+
+    }
+
+    //boton igual
+    protected void OnBigualClicked(object sender, EventArgs e)
+    {
+        numero2 = Convert.ToSingle(Pantalla.Text);
         String display = Pantalla.Text.ToString();
         Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + " + ");
 
-   
-        
+
+
+        switch (opcion)
+        {
+            case "+":
+         
+
+                result = resultado.suma(numero1, numero2);
+                this.Pantalla.Text = (Convert.ToString(result));
+                contadorigual++;
+                break;
+
+
+            case "-":
+                result = resultado.resta(numero1, numero2);
+                this.Pantalla.Text = (Convert.ToString(result));
+                contadorigual++;
+                break;
+
+
+
+            case "*":
+                result = resultado.multiplicacion(numero1, numero2);
+                this.Pantalla.Text = (Convert.ToString(result));
+                contadorigual++;
+                break;
+
+
+            case "/":
+                result = resultado.division(numero1, numero2);
+                this.Pantalla.Text = (Convert.ToString(result));
+                contadorigual++;
+                break;
+
+                 }
+
+            
+
+
+
     }
+
+
     //boton punto(.)
     protected void OnBpuntoClicked(object sender, EventArgs e)
     {
@@ -104,7 +162,7 @@ public partial class MainWindow : Gtk.Window
         {
             String display = Pantalla.Text.ToString();
             Pantalla.DeleteText(0, Pantalla.Text.Length);
-            Pantalla.InsertText(display + " . ");
+            Pantalla.InsertText(display + ",");
             contador++;
         }
        

@@ -3,8 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MainWindow.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="MainWindow.cs" Line="12" Column="17" />
-      <File FileName="operaciones.cs" Line="21" Column="26" />
+      <File FileName="operaciones.cs" Line="6" Column="12" />
+      <File FileName="MainWindow.cs" Line="122" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +22,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/antcha/ed/monodevelop/Calculadora/MainWindow.cs" relfile="MainWindow.cs" line="8" column="1" />
+      <Breakpoint file="/home/antcha/ed/monodevelop/Calculadora/MainWindow.cs" relfile="MainWindow.cs" line="12" column="1" />
+      <Breakpoint file="/home/antcha/ed/monodevelop/Calculadora/MainWindow.cs" relfile="MainWindow.cs" line="117" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

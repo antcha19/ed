@@ -27,7 +27,7 @@ public partial class MainWindow : Gtk.Window
         bigual.ModifyBg(StateType.Normal, new Gdk.Color(180, 118, 60));
         // color de la pantalla
         ModifyBg(StateType.Normal, new Gdk.Color(8, 8, 8));
-        //label1.ModifyBg(StateType.Normal, new Gdk.Color(231, 231, 231));
+      
 
 
     }

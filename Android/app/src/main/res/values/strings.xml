@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MiprimerApp</string>
+    <string name="txt_num1">Escribe el Primer Número</string>
+    <string name="txt_num2">Escribe el Segundo Número</string>
+    <string name="bsuma">Suma</string>
+    <string name="bresta">Resta</string>
+    <string name="bmultiplicacion">Multiplicacion</string>
+    <string name="bdivision">Division</string>
+    <string name="txt_Resultado">Resultado</string>
 </resources>

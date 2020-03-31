@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Acalculadora2</string>
+    <string name="txt_num1">Escribe el Primer Número</string>
+    <string name="txt_num2">Escribe el Segundo Número</string>
+    <string name="RB_Suma">Suma</string>
+    <string name="RB_Resta">Resta</string>
+    <string name="RB_Multiplicacion">Multiplicacion</string>
+    <string name="RB_Division">Division</string>
+    <string name="txt_Resultado">Resultado</string>
+</resources>

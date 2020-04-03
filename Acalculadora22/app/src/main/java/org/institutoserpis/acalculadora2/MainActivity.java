@@ -12,9 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-   private EditText et1,et2;
-   private TextView tv1;
-   private RadioButton rb1,rb2,rb3,rb4;
+    private EditText et1, et2;
+    private TextView tv1;
+    private RadioButton rb1, rb2, rb3, rb4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,30 +29,39 @@ public class MainActivity extends AppCompatActivity {
         rb2 = (RadioButton) findViewById(R.id.RB_Resta);
         rb3 = (RadioButton) findViewById(R.id.RB_Multiplicacion);
         rb4 = (RadioButton) findViewById(R.id.RB_Division);
+
+
     }
 
-    public void  Calcular (View view){
+    public void Calcular(View view) {
 
         int numero1 = Integer.parseInt(et1.getText().toString());
         int numero2 = Integer.parseInt(et2.getText().toString());
 
-        if(rb1.isChecked()==true){
+        if (rb1.isChecked() == true) {
             int suma = numero1 + numero2;
             tv1.setText(String.valueOf(suma));
 
-        }else if (rb2.isChecked()==true){
+        } else if (rb2.isChecked() == true) {
             int resta = numero1 - numero2;
             tv1.setText(String.valueOf(resta));
 
-        }else if (rb3.isChecked()==true){
-            int multiplicacion  = numero1 * numero2;
+        } else if (rb3.isChecked() == true) {
+            int multiplicacion = numero1 * numero2;
             tv1.setText(String.valueOf(multiplicacion));
 
-        }else if (rb4.isChecked()==true){
-            int division = numero1 / numero2;
-            tv1.setText(String.valueOf(division));
-
+        } else if (rb4.isChecked() == true) {
+           try {
+                int division = numero1 / numero2;
+                tv1.setText(String.valueOf(division));
+                if (division == 0) {
+                    Toast.makeText(this, "la operacion no es posible, no se puede dividir entre cero", Toast.LENGTH_LONG).show();
+                }
+            } catch (Exception e) {
+               Toast.makeText(this, "la operacion no es posible, no se puede dividir entre cero", Toast.LENGTH_LONG).show();
+            }
         }
+
     }
 }
 

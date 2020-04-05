@@ -1,0 +1,2 @@
+rootProject.name='AValidacion'
+include ':app'

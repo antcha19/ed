@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SegundaActivity extends AppCompatActivity {
 
@@ -26,5 +27,6 @@ public class SegundaActivity extends AppCompatActivity {
 
         Intent cerrar = new Intent(this, MainActivity.class);
         startActivity(cerrar);
+        Toast.makeText(this,"CERRANDO", Toast.LENGTH_LONG).show();
     }
 }

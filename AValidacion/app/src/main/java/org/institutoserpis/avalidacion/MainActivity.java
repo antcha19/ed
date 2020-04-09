@@ -27,20 +27,27 @@ public class MainActivity extends AppCompatActivity {
     public void validar (View view){
 
         String nombre = et1.getText().toString();
-        String contrasena = et1.getText().toString();
+        String contrasena = et2.getText().toString();
 
-        if (nombre.length() ==0){
-            Toast.makeText(this,"DEBES INTRODUCIR UN NOMBRE", Toast.LENGTH_LONG).show();
-        }
-        if (contrasena.length() ==0){
-            Toast.makeText(this,"DEBES INTRODUCIR UNA CONTRASEÑA", Toast.LENGTH_LONG).show();
-        }
-        if (nombre.length() !=0 &&  contrasena.length() !=0){
-            Toast.makeText(this,"VALIDANDO", Toast.LENGTH_LONG).show();
-            Intent validar = new Intent(this, SegundaActivity.class);
-            validar.putExtra("nombre",et1.getText().toString());
-            startActivity(validar);
+        try {
+            if (nombre.length() ==0){
+                Toast.makeText(this,"DEBES INTRODUCIR UN NOMBRE", Toast.LENGTH_LONG).show();
+            }
+            if (contrasena.length() ==0){
+                Toast.makeText(this,"DEBES INTRODUCIR UNA CONTRASEÑA", Toast.LENGTH_LONG).show();
+            }
 
+            if (nombre.length() !=0 &&  contrasena.length() !=0){
+                Toast.makeText(this,"VALIDANDO", Toast.LENGTH_LONG).show();
+                Intent validar = new Intent(this, SegundaActivity.class);
+                validar.putExtra("nombre",et1.getText().toString());
+                startActivity(validar);
+
+
+            }
+        }catch(Exception e){
+            Toast.makeText(this,"DEBES INTRODUCIR LOS DATOS", Toast.LENGTH_LONG).show();
         }
+
     }
 }
